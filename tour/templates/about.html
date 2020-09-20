@@ -1,0 +1,136 @@
+
+{% extends 'base.html' %} 
+{% block content %}
+{% load static %}
+<!-- banner -->
+<section class="banner_inner" id="home">
+	<div class="banner_inner_overlay">
+	</div>
+</section>
+<!-- //banner -->
+
+<!-- about -->
+<section class="about py-5">
+	<div class="container py-lg-5 py-sm-4">
+		<div class="row">
+			<div class="col-lg-6 about-left">
+				<h3 class="mt-lg-3">Authentic Tours & travel a Kenyan based company, <strong>Travel with us!</strong></h3>
+				<p class="mt-4">On the Tourism sector. It focuses on the Kenyan 
+						communities lifestyle, their day to day activities and diverse cultures across the land.  For the domestic 
+						and international tourist who need to associate, learn, experience all about the different Kenyan communities,
+						their food, clothing, religion and climate change, this is the place to go through.
+						We also focus on tours to Kenyan technological sites and emerging Kenyan cultural changes in the communities. </p>
+				<p class="mt-3"> In Authentic Tours you will explore business hubs and oppotunities. <e class="g">Mining Grounds, fishing, farming among many other.</e> </p>
+			</div>
+			<div class="col-lg-6 about-right text-lg-right mt-lg-0 mt-5">
+				<img src="{% static 'images/about.jpg' %}" alt="" class="img-fluid abt-image" />
+			</div>
+		</div>
+		<div class="row mt-5 text-center">
+			<div class="col-lg-3 col-6">
+				<div class="counter">
+					<span class="fa fa-smile-o"></span>
+					<div class="timer count-title count-number">121+</div>
+					<p class="count-text text-uppercase">happy customers</p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-6">
+				<div class="counter">
+					<span class="fa fa-ship"></span>
+					<div class="timer count-title count-number">47</div>
+					<p class="count-text text-uppercase">Counties Explored </p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-6 mt-lg-0 mt-5">
+				<div class="counter">
+					<span class="fa fa-users"></span>
+					<div class="timer count-title count-number">60</div>
+					<p class="count-text text-uppercase">destinations</p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-6 mt-lg-0 mt-5">
+				<div class="counter">
+					<span class="fa fa-gift"></span>
+					<div class="timer count-title count-number">5+<span>years</span></div>
+					<p class="count-text text-uppercase">experience</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //about -->
+
+
+<!-- tabs -->
+<section class="choose" id="choose">
+	<div class="overlay-all py-5">
+		<div class="container py-lg-5 py-sm-4">
+			<h2 class="heading text-capitalize text-center mb-lg-5 mb-4"> Why Choose Us</h2>
+			<div class="edu-exp-grids">
+				<div class="tab-main">
+					<input id="tab1" type="radio" name="tabs" class="w3pvt-sm" checked>
+					<label for="tab1">We Offer</label>
+					<input id="tab2" type="radio" class="w3pvt-sm" name="tabs">
+					<label for="tab2">We provide</label>
+					<section id="content1">
+						<div class="row text-center">
+							<div class="col-lg-4 col-md-6 inner-w3pvt-wrap">
+								<div class="inner-sec-grid">
+									<span class="fa fa-gift"></span>
+									<h4 class="mt-md-4 mt-2">Diverse Destinations</h4>
+									<p class="mt-3">You have several destinations to choose from, we pride through Kenya, Kenyan communities, their lifestyles and the wildlife heritage.</p>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6 inner-w3pvt-wrap">
+								<div class="inner-sec-grid">
+									<span class="fa fa-gift"></span>
+									<h4 class="mt-md-4 mt-2">Beautiful Places</h4>
+									<p class="mt-3">Where else would you want to visit? We have gone all round East Africa
+											and chosen the most beautiful places for our esteemed clients.</p>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6 inner-w3pvt-wrap">
+								<div class="inner-sec-grid">
+									<span class="fa fa-gift"></span>
+									<h4 class="mt-md-4 mt-2">Low Prices</h4>
+									<p class="mt-3">Authentic Tours gives you value for your money, by providing different
+											exciting packages for all your tour destinations at an unbeatable offer.</p>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section id="content2">
+						<div class="row text-center">
+							<div class="col-lg-4 col-md-6 inner-w3pvt-wrap">
+								<div class="inner-sec-grid">
+									<span class="fa fa-gift"></span>
+									<h4 class="mt-md-4 mt-2">Fast Booking</h4>
+									<p class="mt-3">Our website helps you to book your tour to anywhere and at anytime. Just
+											choose the place you want to go and do online booking</p>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6 inner-w3pvt-wrap">
+								<div class="inner-sec-grid">
+									<span class="fa fa-gift"></span>
+									<h4 class="mt-md-4 mt-2">Support Team</h4>
+									<p class="mt-3">With our years of experience in the industry, this makes us the best to
+											understand your needs. We have a good support team for you.</p>
+								</div>
+							</div>
+							<div class="col-lg-4 inner-w3pvt-wrap">
+								<div class="inner-sec-grid">
+									<span class="fa fa-gift"></span>
+									<h4 class="mt-md-4 mt-2">Passionate Travel</h4>
+									<p class="mt-3">Authentic Tours is made up of a passionate team who love travelling.
+											We ensure all our guests get that passionate feeling too in every way.</p>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- tabs -->
+{% endblock %}

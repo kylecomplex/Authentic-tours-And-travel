@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block content %}
+	       
+{% comment %} <section clas="col-md-12 col-lg-12 col-sm-12 col-xs-12">   {% endcomment %}
+<section class="col-sm-12 " >  
+    <div>
+        <div class="row ">
+			<div class="col-sm-8" style="margin: 30px 10px 30px 30px !important;padding: 30px auto !important border: 1px solid red; width: 100% !important">
+				<div class="col-padding home-left">
+					<section class="bg"></section>
+				</div>
+			</div>
+			<div class="col-sm-4 home-r">
+				<div class="col-padding home-right" style="">
+				<br>
+					<div class="home-signin">
+						<small>Already a member?</small>
+						<form action="account/login" method="POST">
+							{% csrf_token %}
+							<h1 class="text-left">Login</h1>
+							<input class="form-control" type="text" name="username" placeholder="Username" >
+							<input class="form-control" type="password" name="password" placeholder="Password">
+							<button class="btn btn-primary" type="submit">Login</button>
+						</form>
+					</div>
+					<br>
+									
+					<div class="home-signup">
+						<small>Don't have an account?</small>
+						<form action="account/register" method="POST">
+							{% csrf_token %}
+							<h1 class="text-left">Register</h1>
+							
+							<input type="text" name="firstname" placeholder="First name" required class="form-control">
+							<input type="text" name="lastname" placeholder="Last name" required class="form-control">
+							<input type="text" name="username" placeholder="Username" required class="form-control">
+							<input type="email" name="email" placeholder="E-mail" required class="form-control">	
+							<input type="password" name="password1" placeholder="Password" required class="form-control">
+							<input type="password" name="password2" placeholder=" Confirm Password" required class="form-control">
+							<button class="btn btn-primary" type="submit">Register</button>
+						</form>
+						<div>
+							{%for message in messages%}
+							<h3>{{message}} </h3>
+							{% endfor %}
+						</div>
+					</div>
+				</div>
+			</div>
+    	</div>
+    </div>
+</section>    	
+<div style="margin-top: 21px"></div>
+{%endblock %}
